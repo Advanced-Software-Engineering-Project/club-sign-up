@@ -1,19 +1,13 @@
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-# React Tutorial
+# Club Registration Form
+This is an application for a Club Registration Form. This application will be used by a club at a club fair. 
+Students who stop by the club's table can input their email address and other information into the application. 
+The application then store these information for the club to use. 
 
-This is the React comment box example from [the React tutorial](http://facebook.github.io/react/docs/tutorial.html).
+This was inpisred by the react comment box example from [the React tutorial](http://facebook.github.io/react/docs/tutorial.html).
 
 ## To use
-
-There are several simple server implementations included. They all serve static files from `public/` and handle requests to `/api/comments` to fetch or add data. Start a server with one of the following:
-
-### Node
-
-```sh
-npm install
-node server.js
-```
 
 ### Python
 
@@ -22,29 +16,8 @@ pip install -r requirements.txt
 python server.py
 ```
 
-### Ruby
-```sh
-ruby server.rb
-```
 
-### PHP
-```sh
-php server.php
-```
-
-### Go
-```sh
-go run server.go
-```
-
-### Perl
-
-```sh
-cpan Mojolicious
-perl server.pl
-```
-
-And visit <http://localhost:3000/>. Try opening multiple tabs!
+And visit <http://localhost:3001/>. Try opening multiple tabs!
 
 ## Changing the port
 
