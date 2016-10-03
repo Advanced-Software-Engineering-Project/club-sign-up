@@ -1,4 +1,3 @@
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 # Club Registration Form
 This is an application for a Club Registration Form. This application will be used by a club at a club fair. 
