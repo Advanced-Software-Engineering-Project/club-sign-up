@@ -31,8 +31,7 @@ PORT=3001 node server.js
 ```
 
 ## Build and test snapshot
-#### Build
-![Build](/build.png)
+#### Build: pytest
 #### Testcase input on webpage
 ![Testcase](/test_input.png)
 #### Testcase output in PostgreSQL database
