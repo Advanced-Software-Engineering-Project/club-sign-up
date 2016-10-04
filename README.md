@@ -34,4 +34,5 @@ PORT=3001 node server.js
 #### Build
 ![Build](/build.png)
 #### Testcase
+![Testcase](/test_input.png)
 ![Testcase](/test.png)
