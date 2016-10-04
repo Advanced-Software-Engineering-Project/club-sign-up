@@ -101,7 +101,7 @@ label {
   .checkbox label,
   .radio label {
     cursor: pointer;
-    display: inline-block;
+
     font-weight: normal;
     padding: 1px 12px 1px 30px;
     position: relative; }
