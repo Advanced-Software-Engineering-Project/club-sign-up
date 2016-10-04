@@ -12,9 +12,13 @@ This was inpisred by the react comment box example from [the React tutorial](htt
 
 ```sh
 pip install -r requirements.txt
+pytest server.py # Build and test
 python server.py
 ```
-
+If the data needs to be stored in PostgreSQL database, another package is required
+```sh
+sudo apt-get install python-psycopg2
+```
 
 And visit <http://localhost:3001/>. Try opening multiple tabs!
 
@@ -25,3 +29,6 @@ You can change the port number by setting the `$PORT` environment variable befor
 ```sh
 PORT=3001 node server.js
 ```
+
+## Build and test snapshot
+
