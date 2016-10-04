@@ -17,7 +17,7 @@ try:
 except:
     pass
 try:
-    conn = psycopg2.connect("dbname='asehwdb' user='dbpeng' host='localhost' password='dbpass'")
+    conn = psycopg2.connect("dbname='asehwdb' user='dbpeng' host='localhost' password='xxxx'")
 except:
     flog.write("Unable to connect to the database\n")
 try:
