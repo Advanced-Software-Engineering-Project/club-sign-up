@@ -17,7 +17,10 @@ try:
     conn = psycopg2.connect("dbname='asehwdb' user='dbpeng' host='localhost' password='dbpass'")
 except:
     flog.write("Unable to connect to the database\n")
-cur = conn.cursor()
+try:
+    cur = conn.cursor()
+except:
+    pass
 
 
 # Flask
