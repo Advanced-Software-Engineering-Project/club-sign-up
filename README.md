@@ -31,4 +31,7 @@ PORT=3001 node server.js
 ```
 
 ## Build and test snapshot
-
+#### Build
+![Build](/build.png)
+#### Testcase
+![Testcase](/test.png)
