@@ -5,7 +5,7 @@ Students who stop by the club's table can input their email address and other in
 The application then store these information for the club to use. 
 
 This was inpisred by the react comment box example from [the React tutorial](http://facebook.github.io/react/docs/tutorial.html).
-The technologies we used are html, javascript with React framework on the front end, and python with flask, postgres on the backend.
+The technologies we used are html, css, javascript with React framework on the front end, and python with flask, postgres on the backend.
 
 ## To use
 
