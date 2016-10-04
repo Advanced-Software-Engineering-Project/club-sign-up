@@ -20,9 +20,9 @@ var Comment = React.createClass({
   render: function() {
     return (
       <div className="comment">
-        <h2 className="commentName">
-          {this.props.name}
-        </h2>
+        <h4 className="commentName">
+          {this.props.name}, from {this.props.school}, year of {this.props.year}
+        </h4>
         <span dangerouslySetInnerHTML={this.rawMarkup()} />
       </div>
     );
@@ -69,14 +69,18 @@ var CommentBox = React.createClass({
     return {data: []};
   },
   componentDidMount: function() {
-    //this.loadCommentsFromServer();
-    //setInterval(this.loadCommentsFromServer, this.props.pollInterval);
+    this.loadCommentsFromServer();
+    setInterval(this.loadCommentsFromServer, this.props.pollInterval);
   },
   render: function() {
     return (
       <div className="commentBox">
         <h1>Club Registration Form</h1>
         <CommentForm onCommentSubmit={this.handleCommentSubmit} />
+        <hr />
+        <hr />
+        <h2>People Registered</h2>
+        <CommentList data={this.state.data} />
       </div>
     );
   }
@@ -156,26 +160,26 @@ var CommentForm = React.createClass({
               <label>Your School</label>
               <div className="radio">
               <label>
-                <input type="radio" value="School of Engineering and Applied Sciences" 
-                              checked={this.state.school === 'School of Engineering and Applied Sciences'} 
+                <input type="radio" value="School of Engineering and Applied Sciences"
+                              checked={this.state.school === 'School of Engineering and Applied Sciences'}
                               onChange={this.handleSchoolChange} />
                 School of Engineering and Applied Sciences
               </label>
               <label>
-                <input type="radio" value="Columbia College" 
-                              checked={this.state.school === 'Columbia College'} 
+                <input type="radio" value="Columbia College"
+                              checked={this.state.school === 'Columbia College'}
                               onChange={this.handleSchoolChange} />
                 Columbia College
               </label>
               <label>
-                <input type="radio" value="General Studies" 
-                              checked={this.state.school === 'General Studies'} 
+                <input type="radio" value="General Studies"
+                              checked={this.state.school === 'General Studies'}
                               onChange={this.handleSchoolChange} />
                 General Studies
               </label>
               <label>
-                <input type="radio" value="Barnard" 
-                              checked={this.state.school === 'Barnard'} 
+                <input type="radio" value="Barnard"
+                              checked={this.state.school === 'Barnard'}
                               onChange={this.handleSchoolChange} />
                 Barnard
               </label>
@@ -186,26 +190,26 @@ var CommentForm = React.createClass({
               <label>Graduating Year</label>
               <div className="radio">
               <label>
-                <input type="radio" value="2017" 
-                              checked={this.state.year === '2017'} 
+                <input type="radio" value="2017"
+                              checked={this.state.year === '2017'}
                               onChange={this.handleYearChange} />
                 2017
               </label>
               <label>
-                <input type="radio" value="2018" 
-                              checked={this.state.year === '2018'} 
+                <input type="radio" value="2018"
+                              checked={this.state.year === '2018'}
                               onChange={this.handleYearChange} />
                 2018
               </label>
               <label>
-                <input type="radio" value="2019" 
-                              checked={this.state.year === '2019'} 
+                <input type="radio" value="2019"
+                              checked={this.state.year === '2019'}
                               onChange={this.handleYearChange} />
                 2019
               </label>
               <label>
-                <input type="radio" value="2020" 
-                              checked={this.state.year === '2020'} 
+                <input type="radio" value="2020"
+                              checked={this.state.year === '2020'}
                               onChange={this.handleYearChange} />
                 2020
               </label>
