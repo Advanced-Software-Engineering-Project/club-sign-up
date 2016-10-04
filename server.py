@@ -6,13 +6,16 @@
 import json
 import os
 import time
-import psycopg2
 from flask import Flask, Response, request
 
 # logfile
 flog=open('server.log','w')
 
 # Connect PostgreSQL Database
+try:
+    import psycopg2
+except:
+    pass
 try:
     conn = psycopg2.connect("dbname='asehwdb' user='dbpeng' host='localhost' password='dbpass'")
 except:
