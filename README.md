@@ -12,8 +12,7 @@ The technologies we used are html, css, javascript with React framework on the f
 ### Python
 
 ```sh
-pip install -r requirements.txt
-pytest server.py # Build and test
+pytest fabfile.py # Build and test
 python server.py
 ```
 If the data needs to be stored in PostgreSQL database, another package is required
