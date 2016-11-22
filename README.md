@@ -20,10 +20,7 @@ If the data needs to be stored in PostgreSQL database, another package is requir
 ```sh
 sudo apt-get install python-psycopg2
 ```
-And visit <http://localhost:3001/>. Try opening multiple tabs!
+And visit <http://localhost:5000/>. Try opening multiple tabs!
 
-## Build and test snapshot
-#### * Testcase input on webpage
-![Testcase](/test_input.png)
-#### * Testcase output in PostgreSQL database
-![Testcase](/test.png)
+## Build and test
+See "fabfile.py" and "test.py"
